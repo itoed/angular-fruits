@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" ng-app="fruitApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Sidekick Angular Interview Test</title>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="fruitApp.js"></script>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body ng-controller="fruitController">
+
+<div ng-if="!showAlt">
+	<div class="fruit" ng-repeat="fruit in fruits" ng-click="fruitAlert(fruit)">
+		<span ng-class="{'delicious': fruit.isDelicious}">
+			{{fruit.name}} {{fruit.isDelicious ? 'are' : 'are not'}} delicious
+		</span>
+	</div>
+</div>
+
+<div class="alt" ng-if="showAlt">
+	<div class="fruit" ng-repeat="fruit in fruits" ng-click="fruitAlert(fruit)">
+		<span ng-class="{'delicious': fruit.isDelicious}">
+			{{fruit.name}} {{fruit.isDelicious ? 'are' : 'are not'}} delicious
+		</span>
+	</div>
+</div>
+
+<div>
+	<button name="toggleAlt" ng-click="toggleAlt()">
+		{{showAlt ? 'Default' : 'Alternative'}}
+	</button>
+</div>
+
+</body>
+</html>

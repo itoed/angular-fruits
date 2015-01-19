@@ -1,0 +1,21 @@
+{
+  "name": "Fruit App",
+  "version": "0.0.1",
+  "description": "Sidekick Interview Application",
+  "main": "fruitApp.js",
+  "authors": [
+    "Eduardo Ito"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.3.9"
+  }
+}

@@ -1,0 +1,15 @@
+.fruit {
+  color: red;
+}
+
+.fruit .delicious {
+  color: green;
+}
+
+.alt .fruit {
+  color: green;
+}
+
+.alt .fruit .delicious {
+  color: red;
+}
